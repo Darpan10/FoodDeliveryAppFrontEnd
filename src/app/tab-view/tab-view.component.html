@@ -1,0 +1,50 @@
+<div class="tab-wrapper">
+    <div class="tab-card">
+      <p-tabView styleClass="custom-tabview" >
+     <p-tabPanel header="COMBO |"  [headerStyle]="tabHeaderStyleCombo" >
+
+
+          <div class="carousel-wrapper">
+            <p-carousel
+              [value]="imagesCombo"
+              [numVisible]="3"
+              [numScroll]="1"
+              [circular]="true"
+              class="custom-carousel"
+            >
+              <ng-template pTemplate="item" let-item>
+                <div class="carousel-item-container">
+                  <img [src]="item" class="carousel-item-img"
+                  (click)="navigateToComboDetail(item)" />
+                  
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+        </p-tabPanel>
+  
+        <p-tabPanel header="| OFFER" [headerStyle]="tabHeaderStyleOffer">
+          <div class="carousel-wrapper">
+            <p-carousel
+              [value]="imagesOffer"
+              [numVisible]="4"
+              [numScroll]="1"
+              [circular]="true"
+              class="custom-carousel"
+            >
+              <ng-template pTemplate="item" let-item>
+                <div class="carousel-item-container">
+                  <img [src]="item"  class="carousel-item-img"
+                     (click)="navigateToOfferDetail(item)"
+                 
+                   
+                   />
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+  

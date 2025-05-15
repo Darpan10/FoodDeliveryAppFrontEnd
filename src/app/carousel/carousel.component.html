@@ -1,0 +1,23 @@
+<div class="carousel-container">
+    <p-carousel [value]="images" 
+                [numVisible]="1" 
+                [numScroll]="1" 
+                [autoplayInterval]="3000" 
+                [circular]="true" 
+                class="custom-carousel">
+      
+      <ng-template pTemplate="item" let-item>
+        <div class="carousel-item-container">
+          <img [src]="item" class="carousel-item-img" />
+          <div class="slogan-overlay">
+            <div class="slogan-content">
+              <i class="fas fa-hamburger slogan-icon"></i>
+              <h3 class="slogan-text">Your Cravings, Our Priority – 24/7 Open for delivery</h3>
+              <i class="fas fa-clock slogan-icon"></i>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  

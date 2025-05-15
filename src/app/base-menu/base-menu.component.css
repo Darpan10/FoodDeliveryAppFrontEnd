@@ -1,0 +1,131 @@
+    /* Zoom-in effect on hover */
+    .example-card:hover {
+        transform: scale(1.05); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: soft shadow on hover */
+    }
+
+
+    /* Title Container */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eadfdf;
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF5722;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 1px;
+}
+
+/* Cards Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Card Buttons */
+.card-button {
+    margin: 10px;
+    flex: 1 1 200px;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+/* Card Title */
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 4vw, 2rem); /* Adjust as needed */
+    font-weight: 600;
+    color: #FF5722;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Default (desktop/tablet) */
+.card-image {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover; /* Ensures image fills without distortion */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .card-image {
+      height: 25vh; /* or 20vh if needed */
+    }
+  }
+  
+
+/* Hover Effect on Cards */
+.card-button:hover .example-card {
+    transform: scale(1.05);
+}
+
+/* Mat Card */
+.example-card {
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+/* Optional: Add more hover effects for the card */
+.example-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

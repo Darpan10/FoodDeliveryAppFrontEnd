@@ -1,0 +1,132 @@
+
+  
+  
+  
+  
+/* Contact Us Section */
+.contact-us-section {
+    width: 100%;
+    background-color: #fff; /* Set background to white */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-us-content {
+    max-width: 800px;
+    padding: 30px;
+    background: #fff; /* White background for the content */
+  
+  
+    text-align: center;
+  }
+  
+  /* Contact Us Title */
+  .contact-us-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FF5722;
+  }
+  
+  /* Call Us Section */
+  .contact-us-call {
+    margin-bottom: 30px;
+  }
+  
+  .contact-us-call h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* Download App Section */
+  .download-app {
+    margin-bottom: 30px;
+  }
+  
+  .download-app h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF5722;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #ff3d00;
+  }
+  
+  /* Connect With Us Section */
+  .connect-with-us {
+    margin-bottom: 30px;
+  }
+  
+  .connect-with-us h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size: 1.2rem;
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ff3d00;
+  }
+  
+  /* Optional: Add responsiveness */
+  @media (max-width: 768px) {
+    .contact-us-title {
+      font-size: 2rem;
+    }
+  
+    .contact-us-call h3, .download-app h3, .connect-with-us h3 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-details {
+      font-size: 1rem;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

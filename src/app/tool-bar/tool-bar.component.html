@@ -1,0 +1,38 @@
+
+<div class="container" class="toolContainer">
+<mat-toolbar  class="mat-elevation-z8">
+  
+    <img (click)="navigateToHomePage()" src="assets/logo.png" alt="App Logo" style="height: 80px; max-width: 70px;" />
+ 
+ 
+  <span class="example-spacer"></span>
+  
+  <button
+  (click)="navigateToCart()"
+  mat-icon-button
+  matBadge={{cartItemNumbers}}
+  matBadgeColor="warn"
+  class="example-icon favorite-icon"
+  aria-label="Cart icon with badge">
+  <mat-icon >shopping_cart</mat-icon>
+
+
+
+</button>
+
+</mat-toolbar>
+</div>
+
+<!-- <p-galleria [(value)]="images"
+            [showIndicators]="true"
+            [showThumbnails]="false"
+            [changeItemOnIndicatorHover]="true"
+            [containerStyle]="{ 'max-width': '640px' }">
+  <ng-template #item let-item>
+    <img [src]="item" style="width: 100%; display: block;" />
+  </ng-template>
+</p-galleria> -->
+
+ 
+
+ 

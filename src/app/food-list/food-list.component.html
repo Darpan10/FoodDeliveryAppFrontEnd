@@ -1,0 +1,67 @@
+ <!-- Search Bar -->
+<form class="search-form" style="padding: 1rem;">
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Search Menu</mat-label>
+    <input
+    matInput
+    [(ngModel)]="searchQuery"
+    (ngModelChange)="onSearchChange($event)"
+    name="search"
+  />
+  </mat-form-field>
+</form>
+
+
+<div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; padding: 1rem;">
+   <ng-container *ngFor="let item of filteredItems">
+        <mat-card
+        appearance="outlined"
+        class="menu-card"
+        (mouseover)="hover = true"
+        (mouseout)="hover = false">
+
+        <mat-card-header>
+          <mat-card-title-group>
+            <img
+              mat-card-sm-image
+              [src]="item.photo"
+              alt="{{ item.item }}"
+              class="menu-image" />
+
+            <div class="menu-header-text">
+              <mat-card-title class="menu-title">
+                {{ item.item }}
+              </mat-card-title>
+              <mat-card-subtitle class="menu-subtitle">
+                {{ item.subcategory }} • {{ item.category }}
+              </mat-card-subtitle>
+            </div>
+          </mat-card-title-group>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p class="menu-description">
+            Delicious {{ item.item }} from our {{ item.subcategory }} menu.
+          </p>
+        
+          <div class="menu-price-action">
+            <span class="menu-price">₹{{ item.costPerItem }}</span>
+        
+            <button
+              mat-raised-button
+              color="primary"
+              (click)="updateCartSummary(item.item,1,
+              item.costPerItem)"
+              class="add-to-cart-button"
+            >
+              <mat-icon>add_shopping_cart</mat-icon>
+              Add to Cart
+            </button>
+          </div>
+        </mat-card-content>
+        
+
+      </mat-card>
+    
+  </ng-container>
+</div>

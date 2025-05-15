@@ -1,0 +1,53 @@
+.p-tabview-nav-container {
+    justify-content: center !important;
+  }
+
+  
+ 
+  
+  ::ng-deep .custom-tabview .p-tabview-nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  
+
+  .tab-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .tab-card {
+    width: 90%;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+ 
+  
+  .carousel-item-img {
+    max-width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 35vh;
+  }
+
+  .carousel-item-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-item-img:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+  

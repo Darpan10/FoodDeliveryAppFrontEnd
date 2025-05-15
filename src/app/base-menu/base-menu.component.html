@@ -1,0 +1,42 @@
+<!-- Title Section -->
+<div class="title-container">
+    <h2 class="title">Shop by preference</h2>
+</div>
+
+<!-- Cards Section -->
+<div class="container" id="baseMenu">
+
+    <!-- Veg Card -->
+    <button mat-button class="card-button" style="max-width: 80%;" (click)="navigateToFoodList()">
+        <mat-card class="example-card" appearance="outlined">
+            <!-- <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-title">
+                    Veg
+                </mat-card-title>
+            </mat-card-header> -->
+            <img mat-card-image src="/assets/veg.jpg" alt="Veg" class="card-image">
+            <mat-card-content class="card-title">Veg</mat-card-content>
+        </mat-card>
+    </button>
+
+    <!-- Non-Veg Card -->
+    <button mat-button class="card-button" style="max-width: 80%;" (click)="navigateToFoodList()">
+        <mat-card class="example-card" appearance="outlined">
+            <!-- <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-title">
+                    Non-Veg
+                </mat-card-title>
+            </mat-card-header> -->
+            <img mat-card-image src="/assets/chicken.jpg" alt="Non-Veg" class="card-image">
+            <mat-card-content class="card-title">Non-veg</mat-card-content>
+        </mat-card>
+    </button>
+</div>
+
+
+
+
+
+

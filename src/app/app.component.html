@@ -1,0 +1,8 @@
+<app-tool-bar ></app-tool-bar>
+<app-carousel *ngIf="currentRoute !== '/foodList' && currentRoute !=='/cart'" ></app-carousel>
+<!--<app-base-menu></app-base-menu>
+<app-food-list></app-food-list> -->
+ <router-outlet></router-outlet> 
+<app-tab-view   *ngIf="currentRoute !== '/foodList' && currentRoute !=='/cart' " ></app-tab-view>
+<app-about-us   *ngIf="currentRoute !== '/foodList' && currentRoute !=='/cart' " ></app-about-us>
+<app-contact-us *ngIf="currentRoute !== '/foodList'" ></app-contact-us>

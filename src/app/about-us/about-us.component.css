@@ -1,0 +1,61 @@
+
+
+/* About Us Section ------------------------------------------------------------------------*/
+.about-us-section {
+  position: relative;
+  width: 100%;
+  background-image: url('/assets/background.jpg');  /* Set the background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;  /* Padding for top and bottom */
+  color: #fff;  /* White text color */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Ensures the section has a minimum height */
+  overflow: hidden; /* Prevents background image overflow */
+}
+
+/* About Us Content */
+.about-us-content {
+  max-width: 800px; /* Limit the content width */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background for readability */
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* About Us Title */
+.about-us-title {
+  font-family: 'Poppins', sans-serif;  /* Clean and modern font */
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;  /* Space below the title */
+  color: #FF5722;  /* Warm color to match your theme */
+}
+
+/* About Us Text */
+.about-us-text {
+  font-family: 'Lora', serif;  /* Elegant serif font for the text */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;  /* White text for better contrast */
+  margin-bottom: 15px;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 2rem;
+  }
+
+  .about-us-text {
+    font-size: 1rem;
+  }
+}
+
+
+

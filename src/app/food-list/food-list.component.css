@@ -1,0 +1,86 @@
+.menu-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; box-sizing: border-box; width: 100%; overflow: hidden;
+}
+
+  .menu-card {
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .menu-image {
+    border-radius: 6px;
+  }
+  
+  .menu-header-text {
+    margin-left: 1rem;
+  }
+  
+  .menu-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .menu-subtitle {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .menu-description {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .menu-price {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+  
+
+  .example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.menu-description {
+  margin-bottom: 0.5rem;
+}
+
+.menu-price-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ff5722;
+}
+
+.menu-price {
+  color: #ff5722;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ff5722 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
